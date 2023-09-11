@@ -14,7 +14,7 @@
 	<name>HNG</name>
 	<description>Stage 1 project</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -35,6 +35,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>HNG</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
