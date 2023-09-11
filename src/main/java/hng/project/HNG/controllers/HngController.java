@@ -15,7 +15,7 @@ public class HngController {
     public HngController(HngServices hngServices){
         this.hngServices = hngServices;
     }
-    @RequestMapping(value = "/api/v1", method = RequestMethod.GET)
+    @RequestMapping(value = "/api", method = RequestMethod.GET)
     public ResponseEntity<Slack> endPoint(@RequestParam String slack_name, @RequestParam String track){
         Slack slack = hngServices.getJson(slack_name, track);
         return new ResponseEntity<>(slack, HttpStatus.OK);
